@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intermediate Web Development Task 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">ApexPlanet</div>
+      <ul class="nav-links">
+        <li><a href="#contact-form">Contact Form</a></li>
+        <li><a href="#todo-list">To-Do List</a></li>
+        <li><a href="#grid-section">Grid Layout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact-form" class="section">
+      <h2>Contact Form</h2>
+      <form id="form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+        
+        <button type="submit">Submit</button>
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </section>
+
+    <section id="grid-section" class="section">
+      <h2>Responsive Grid Layout</h2>
+      <div class="grid-container">
+        <div class="grid-item">Content Box 1</div>
+        <div class="grid-item">Content Box 2</div>
+        <div class="grid-item">Content Box 3</div>
+        <div class="grid-item">Content Box 4</div>
+        <div class="grid-item">Content Box 5</div>
+        <div class="grid-item">Content Box 6</div>
+      </div>
+    </section>
+
+    <section id="todo-list" class="section">
+      <h2>Dynamic To-Do List</h2>
+      <input type="text" id="todo-input" placeholder="Add a new task" />
+      <button id="add-task-btn">Add Task</button>
+      <ul id="todo-list-ul"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ApexPlanet Software Pvt Ltd. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
